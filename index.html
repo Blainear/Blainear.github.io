@@ -36,9 +36,8 @@
       <h1 class="glow gradient-text glitch">The Chaotic Sagas of Jesse Mcgay</h1>
       <nav aria-label="Main">
         <ul class="nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Generate</a></li>
+          <li><a href="#adventures">Adventures</a></li>
         </ul>
       </nav>
     </div>
@@ -46,28 +45,19 @@
 
   <main id="main" class="container">
     <section id="home" class="section reveal" aria-labelledby="home-title">
-      <h2 id="home-title" class="glow gradient-text glitch">Jesse Mcgay: The Chaos Begins</h2>
+      <h2 id="home-title" class="glow gradient-text glitch">Generate Absurd Adventures</h2>
       <p>
-        From the windswept dunes of Te Ika‑a‑Māui to glaciers of Te Waipounamu, Jesse Mcgay sprints backwards,
-        speaks to kea in perfect Morse code, and orders flat whites from the future. None of this adds up. That’s the point.
+        Tap the button to add a brand‑new, utterly nonsensical Jesse Mcgay adventure to the log below.
+        Each click writes a fresh tale. Scroll to “Adventures” to read them.
       </p>
       <div id="chaosMeter" class="chaos-meter" aria-hidden="true" title="Chaos meter"></div>
-      <button id="demoBtn" class="btn-shine magnetic" type="button">Unleash Chaos</button>
+      <button id="demoBtn" class="btn-shine magnetic" type="button" aria-describedby="home-title">Generate Adventure</button>
     </section>
 
-    <section id="about" class="section reveal" aria-labelledby="about-title">
-      <h2 id="about-title" class="glow gradient-text glitch">Tales That Make No Sense</h2>
-      <p>
-        A short selection from Jesse’s totally credible, absolutely bewildering adventures across Aotearoa New Zealand:
-      </p>
-      <ul id="adventuresList" class="adventure-list"></ul>
-    </section>
-
-    <section id="contact" class="section reveal" aria-labelledby="contact-title">
-      <h2 id="contact-title" class="glow gradient-text glitch">Contact the Legend</h2>
-      <p>
-        Have you sighted Jesse waterskiing on lava, herding clouds over Fiordland, or bargaining with a lighthouse? Send your best tall tales.
-      </p>
+    <section id="adventures" class="section reveal" aria-labelledby="adventures-title">
+      <h2 id="adventures-title" class="glow gradient-text glitch">Adventure Log</h2>
+      <p>New entries appear here every time you press “Generate Adventure”.</p>
+      <ul id="adventuresList" class="adventure-list" aria-live="polite"></ul>
     </section>
   </main>
 
